@@ -4,7 +4,7 @@
 #include <stdlib.h>
 typedef struct vector vector;
 struct vector{
-    void* mass;
+    void** mass;
     size_t type_of_data;
     size_t size;
 };
