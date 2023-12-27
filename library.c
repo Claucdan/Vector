@@ -81,7 +81,7 @@ void pop_back(vector* main){
     if(main->size!=0){
         main->size--;
         free(main->mass[main->size]);
-        main->mass= malloc(sizeof(void*)*main->size);
+        main->mass=(void**)malloc(sizeof(void*)*main->size);
     }
 }
 void insert(vector* main,const int* position,void* val){
@@ -109,6 +109,7 @@ void clear(vector* main){
     }
     free(main->mass);
     main->size=0;
+    main->max_size=0;
 }
 void emplace(vector* main,const int* position,void* val){
     main->max_size++;
