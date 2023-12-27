@@ -2,7 +2,7 @@ name: Testing
 run-name: ${{ github.actor }} push in .github new version
 on: [push]
 jobs:
-  build:
+  Testing:
     runs-on: ubuntu-latest
 
     steps:
@@ -11,7 +11,7 @@ jobs:
       - name: Clone test
         run: |
           git clone https://github.com/Claucdan/Test-for-vector
-#test
+
       - name: Clone googletest
         run: |
           git clone https://github.com/google/googletest ${{github.workspace}}/Test-for-vector/googletest
