@@ -1,5 +1,5 @@
 name: Testing
-run-name: ${{ .github.actor }} push in .github new version
+run-name: ${{ github.actor }} push in .github new version
 on: [push]
 jobs:
   build:
