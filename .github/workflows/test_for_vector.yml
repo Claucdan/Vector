@@ -7,14 +7,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-#hd
+
       - name: Clone test
         run: |
           git clone https://github.com/Claucdan/Test-for-vector
 
       - name: Clone googletest
         run: |
-          git clone https://github.com/google/googletest ${{github.workspace}}/Test-for-vector
+          git clone https://github.com/google/googletest ${{github.workspace}}/Test-for-vector/googletest
 
       - name: Configure Test
         run: |
