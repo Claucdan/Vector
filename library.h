@@ -65,7 +65,7 @@ void push_back(vector* main,void* data);
 void pop_back(vector* main);
 /*It inserts new element before the element at the specified position*/
 void insert(vector* main,const int* position,void* val);
-/*t is used to remove count of elements from a container from the specified position*/
+/*It is used to remove count of elements from a container from the specified position*/
 void erase(vector* main,const int* position,const int* count);
 /*It is used to remove all the elements of the vector container*/
 void clear(vector* main);
